@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 	"strconv"
-	"study/redis"
+	"study/reptile"
 	"time"
 )
 
@@ -232,5 +232,18 @@ func main() {
 	//goroutine.MainGoroutine()
 	//goroutine.Atomic()
 	//mysql.Commit()
-	redis.Set()
+	//redis.Set()
+	// 1.抽取的爬邮箱
+	//reptile.GetEmail()
+	// 2.抽取的爬邮箱
+	//reptile.GetEmail2("https://tieba.baidu.com/p/6051076813?red_tag=1573533731")
+	// 3.爬链接
+	//reptile.GetLink("http://www.baidu.com/s?wd=%E8%B4%B4%E5%90%A7%20%E7%95%99%E4%B8%8B%E9%82%AE%E7%AE%B1&rsv_spt=1&rsv_iqid=0x98ace53400003985&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_dl=ib&rsv_sug2=0&inputT=5197&rsv_sug4=6345")
+	// 4.爬手机号
+	//reptile.GetPhone("https://www.zhaohaowang.com/")
+	// 5.爬身份证号
+	//reptile.GetIdCard("https://henan.qq.com/a/20171107/069413.htm")
+	// 6.爬图片
+	//reptile.GetImg("http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=%E7%BE%8E%E5%A5%B3")
+	reptile.GetPicture()
 }
